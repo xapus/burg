@@ -1,0 +1,168 @@
+
+body {
+    font-family: "Source Sans Pro",sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFB600;
+}
+
+#bg {
+    background: url("../images/fondo.jpg") repeat scroll 130px 0 rgba(0, 0, 0, 0);
+    display: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    transition: all 3s ease;
+}
+#logo_wrap {
+    margin-bottom: 75px;
+    margin-top: 165px;
+    text-align: center;
+    display: none;
+}
+
+
+#menu {
+    height: 190px;
+    padding: 20px;
+    text-align: center;
+}
+
+#productos {
+    height: 190px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+
+#content_productos {
+  display: none;
+}
+
+#productos h1 {
+    font-size: 32px;
+    color: #96212B;
+}
+
+.producto {
+  display: inline-block;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.prod_left:hover {
+  opacity: 0.7;
+}
+
+.comprar {
+    background: none repeat scroll 0 0 #96212b;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+
+.comprar input {
+    float: right;
+    width: 50px;
+}
+
+.producto h2 {
+  color: #96212B;
+}
+
+.prod_left {
+  display: inline-block;
+}
+
+.prod_right {
+    display: none;
+    margin: 0px 0px 0px 54px;
+    padding: 10px;
+    text-align: right;
+    width: 300px;
+    opacity: 0;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.arrow:hover {
+  opacity: 0.7;}
+
+
+.a_left {
+    float: left;
+    transform: rotate(180deg);
+}
+
+.a_right {
+    float: right;
+}
+
+#hex1, #hex2, #hex3 {
+  opacity: 0;
+}
+
+.hexagono:after {
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+    border-top: 50px solid #96212B;
+    bottom: -50px;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+}
+
+.hexagono {
+    background: none repeat scroll 0 0 #96212B;
+    display: inline-block;
+    height: 90px;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    width: 170px;
+    top: 40px;
+    cursor: pointer;
+}
+.hexagono:hover:after {
+   border-top: 50px solid #B7686E;
+}
+
+.hexagono:hover:before {
+   border-bottom: 50px solid #B7686E;
+}
+
+
+.hexagono:hover {
+  background: #B7686E;
+}
+
+.hexagono:hover span {
+  color: #fff;
+}
+
+.hexagono span {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+    color: #FFBB13;
+}
+
+.hexagono:before {
+    border-bottom: 50px solid #96212B;
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: -50px;
+    width: 0;
+}
